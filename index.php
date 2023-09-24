@@ -43,11 +43,11 @@
           </div>
       </div>
         <p class="text-slate-400 my-4" >or use your email account</p>
-        <form class="w-max flex flex-col items-center gap-y-3">
-          <input class="bg-slate-200 py-2 px-4 rounded focus:outline-none" type="email" placeholder="Email" required />
-          <input class="bg-slate-200 py-2 px-4 rounded focus:outline-none" type="password" placeholder="Password" required />
+        <form class="w-max flex flex-col items-center gap-y-3" method="POST" action="aksi.php">
+          <input class="bg-slate-200 py-2 px-4 rounded focus:outline-none" name="username" type="text" placeholder="Username" required />
+          <input class="bg-slate-200 py-2 px-4 rounded focus:outline-none" name="password" type="password" placeholder="Password" required />
           <div class="self-start">
-            <input  type="checkbox" id="rememberMe"/>
+            <input name="rememberMe" type="checkbox" id="rememberMe"/>
             <label class="text-slate-600" for="rememberMe">Remember Me</label>
           </div>
           <button type="submit" class="w-max bg-green-500 text-white font-bold rounded-full py-3 px-14 mt-4 hover:bg-green-600">Sign Up</button>
